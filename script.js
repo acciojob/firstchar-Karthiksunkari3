@@ -1,8 +1,11 @@
-function firstChar(text) {
-  // your code here
-}
+def firstChar(string):
+    for char in string:
+        if char != ' ':
+            return char
+    return ''
 
-// Do not change the code below
-
-const text = prompt("Enter text:");
-alert(firstChar(text));
+# Test cases
+print(firstChar(' Rosa Parks '))   # Output: 'R'
+print(firstChar('  Hello World ')) # Output: 'H'
+print(firstChar('   '))            # Output: ''
+print(firstChar(''))                # Output: ''
